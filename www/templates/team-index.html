@@ -1,0 +1,34 @@
+<!-- 
+  This template gets placed in the Pet tab's <ion-nav-view> directive.
+  It was wired up in the app config (app.js) 
+  The 'pets' data comes from its $scope within PetIndexCtrl (controller.js)
+-->
+<ion-view title="Team HexColor">
+  <ion-content>
+
+    <div class="row">
+        <div ng-repeat="team in teams">
+
+          
+          <!-- HERE IS MY DIRECTIVE -->
+          <teamcolor color="team.color" team="team" /> 
+
+
+        </div>
+    </div>
+
+    <div class="card">
+      <div class="item item-text-wrap tytop">
+        <p>Originally I wanted to use something with the stats from players from each team and make DataVis with D3.</p>
+
+        <p>I built the module for D3, you can see it in /lib/js/d3.js</p>
+
+        <p>It turned out the API wasn't as smart as I wanted and I did not have access to a roster based on a team without paying for the upgraded API :(</p>
+
+        <p>So I just built a simple directive that takes in a teams data and displays their color and the team name. The offset for the API is randomly generated with each API call. Enjoy.</p>
+      </div>
+    </div>
+    
+
+  </ion-content>
+</ion-view>

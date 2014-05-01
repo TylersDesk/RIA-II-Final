@@ -6,3 +6,32 @@
   width: 96px;
   height: 96px;
 }
+
+
+body, .pane {
+	background:#DFDFDF;
+	color:#595757;
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+	color:#595757;
+}
+
+.homeImage {
+	position: relative;
+	bottom: 0px;
+}
+
+.text-center {text-align: center;}
+.row.text-center img {max-width:100%;}
+.tytop {
+	font-size: 13px;
+}
+
+.awesomeblock {
+	height: 200px;
+}
+
+.tybottom {
+	font-size: 10px;
+}
